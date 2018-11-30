@@ -8,7 +8,47 @@ BODY {overflow-x: hidden;}
   </title>
   </head>
   <body>
-    <h1>Flaregun's Fun Shack</h1>
+<script>
+//set style for NS4 to ''
+if (document.layers)
+var ns4def=''
+</script>
+
+<h2 id="flyin" style="position:relative;left:-800px;font-style:italic" style=&{ns4def};>Flaregun's Fun Shack</h2>
+
+
+<script language="JavaScript1.2">
+
+/*
+Fly-in Header script (credit must stay enclosed)
+By javascriptkit.com
+For this and over 400+ JavaScripts,
+Visit http://www.javascriptkit.com
+*/
+
+
+if (document.getElementById||document.all)
+var crossheader=document.getElementById? document.getElementById("flyin").style : document.all.flyin.style
+
+function animatein(){
+if (parseInt(crossheader.left)<0)
+crossheader.left=parseInt(crossheader.left)+20+"px"
+else{
+crossheader.left=0
+crossheader.fontStyle="normal"
+clearInterval(start)
+}
+}
+
+if (document.getElementById||document.all)
+start=setInterval("animatein()",50)
+
+
+</script>
+
+<p align="center">This free script provided by<br />
+<a href="http://javascriptkit.com">JavaScript
+Kit</a></p>
     <hr></hr>
     <i>Take a look at this excellent piece of cinematography</i>
     <br><iframe width="560" height="315" src="https://www.youtube.com/embed/l3eww1dnd0k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br>
