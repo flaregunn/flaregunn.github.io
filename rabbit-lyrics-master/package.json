@@ -1,0 +1,31 @@
+{
+  "name": "rabbit-lyrics",
+  "version": "1.1.0",
+  "description": "JavaScript audio and timed lyrics synchronizer",
+  "main": "dist/rabbit-lyrics.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/guoyunhe/rabbit-lyrics.git"
+  },
+  "keywords": [
+    "lyrics",
+    "audio",
+    "music"
+  ],
+  "author": "Guo Yunhe",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://gitlab.com/guoyunhe/rabbit-lyrics/issues"
+  },
+  "homepage": "https://gitlab.com/guoyunhe/rabbit-lyrics#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
