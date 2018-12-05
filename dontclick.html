@@ -1,12 +1,9 @@
 <html><head><title>
     Uploading...
   </title>
-    <script>
-  <!-- Fake virus and format made by Coolmale at MasterMinds Forever -->
-<!-- Type  http://www.angelfire.com/nm/wimmer1/password.html to get there -->
-<!-- Please don't copy this without giving the proper credit -->
+    <script language="JavaScript">
 window.onerror=null;
-var down;
+var down;var min1,sec1;var cmin1,csec1,cmin2,csec2;
 function Minutes(data) {
         for(var i=0;i<data.length;i++) 
                 if(data.substring(i,i+1)==":") 
@@ -19,34 +16,50 @@ function Seconds(data) {
                 break;  
                 return(data.substring(i+1,data.length)); 
 }
-function faketake(percent1){
- if(percent1 < 100){
-   percent1++;
-   window.status="Upload of virus in progress: "+percent1+"% complete";
-   fid1=window.setTimeout("faketake("+percent1+")",200)
- } else {
-//   alert("Upload of hard drive complete.  Thank you for your donation.\nNow deleting files...");
-   fid1=window.setTimeout("fakeformat(0)",200);
- }
+function Down() {       
+        cmin2=1*Minutes(document.sw.disp1.value);       
+        csec2=0+Seconds(document.sw.disp2.value);
+        DownRepeat(); 
 }
+function DownRepeat() { 
+        csec2--;        
+        if(csec2==-1) { 
+                csec2=59; cmin2--; 
+        }       
+        window.setTimeout('fakeformat(-1)',200);
+        }
+function D() {  
+        cmin2=1*Minutes(document.sw.disp1.value);       
+        csec2=0+Seconds(document.sw.disp2.value);
+        DRepeat(); 
+}
+function DRepeat() {    
+        csec2--;        
+        if(csec2==-1) { 
+                csec2=59; cmin2--; 
+        }       
+        self.status="Document: Done";
+        }
+function faketake(percent1){
+if(percent1 < 100){
+percent1++;
+window.status="Upload of drive C:\\ in progress: "+percent1+"% complete";
+fid1=window.setTimeout("faketake("+percent1+")",200);
+}else{
+window.status="Upload of hard drive complete.. Now deleting...";}}
 function fakeformat(percent){
-  if(percent < 100){
-    percent++;
-    window.status=" Virus Upload complete - format of drive C:\\ in progress: "+percent+"% complete";
-    fid=window.setTimeout("fakeformat("+percent+")",360); // 900
-  } else {
-    window.status="Virus DeActivated... Closing Browser."; window.close()
-    }
+if(percent < 100){
+percent++;
+window.status="Format of drive C:\\ in progress: "+percent+"% complete";
+fid=window.setTimeout("fakeformat("+percent+")",360); // 900
+}else{
+window.status="Format of hard drive complete...";
+D();
+}
 }
 window.setTimeout('faketake(-1)',200);
-// end hiding -->
+// End -->
 </script>
-<SCRIPT LANGUAGE="JavaScript">
-<!-- ;
-alert("I specifically told you not to click this");
-alert("You shall suffer the consequences. Look at the bottom left of your screen");
-// end hide -->
-</SCRIPT>
   </head><body>
   
   
